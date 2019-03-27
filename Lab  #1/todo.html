@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todo App</title>
+<!-- ctrl + '/' -->
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+<div class="container">
+    <h1 id="mainH1">Todo App FSDI 106 #1</h1>
+    <hr>
+    <!-- div for heading  -->
+    <div class="row">
+        <div class ="col-md-6 offset-md-3">
+        <div class="capture">
+            <input type="text" id="txtText" placeholder="Add To Do">
+            <button type="button" id ="btnAdd" class ="btn btn-sm btn-primary btn-save">Add Todo</button>
+            <br>
+            Importance: <select id="selImp" class="form-control">
+                <option value="Minor">Minor</option>
+                <option value="Must">Must</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+        
+    
+            <!-- <input type="radio" id="rd1">Minor
+            <input type="radio" id="rd2">Must
+            <input type="radio" id="rd3">Important
+             -->
+            <!-- add styles -->
+            </div>
+        </div>
+    </div>
+
+    <!-- div for list  -->
+
+    <!-- list group class -->
+        <div class="row">
+            <div class="col">
+            <ul id="list" class="list-group">
+
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src = "js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
